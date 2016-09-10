@@ -35,7 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Nama"
-            android:textSize="16dp"
+            android:textSize="22dp"
             tools:text="Nama" />
 
         <EditText
@@ -43,12 +43,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email"
-            android:textSize="16dp"
+            android:textSize="22dp"
             tools:text="Email" />
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="142dp">
+            android:layout_height="200dp">
 
             <TextView
                 android:id="@+id/textView"
@@ -75,7 +75,8 @@
                         android:layout_alignParentTop="true"
                         android:layout_marginLeft="127dp"
                         android:layout_marginStart="127dp"
-                        android:text="10" />
+                        android:text="10"
+                        android:textSize="18dp" />
 
                     <RadioButton
                         android:id="@+id/radioButton11"
@@ -86,7 +87,8 @@
                         android:layout_marginStart="23dp"
                         android:layout_toEndOf="@+id/radioButton10"
                         android:layout_toRightOf="@+id/radioButton10"
-                        android:text="11" />
+                        android:text="11"
+                        android:textSize="18dp" />
 
                     <RadioButton
                         android:id="@+id/radioButton12"
@@ -97,7 +99,8 @@
                         android:layout_marginStart="23dp"
                         android:layout_toEndOf="@+id/radioButton11"
                         android:layout_toRightOf="@+id/radioButton11"
-                        android:text="12" />
+                        android:text="12"
+                        android:textSize="18dp" />
 
                 </RelativeLayout>
             </RadioGroup>
@@ -120,7 +123,8 @@
                 android:layout_marginLeft="23dp"
                 android:layout_marginStart="23dp"
                 android:layout_toEndOf="@+id/textView2"
-                android:layout_toRightOf="@+id/textView2" />
+                android:layout_toRightOf="@+id/textView2"
+                android:entries="@array/bidang" />
 
             <TextView
                 android:id="@+id/textView3"
@@ -133,31 +137,34 @@
                 android:textSize="21dp" />
 
             <CheckBox
-                android:id="@+id/checkBoxNulis"
+                android:id="@+id/checkBoxBaca"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignLeft="@+id/Jurusan"
                 android:layout_alignStart="@+id/Jurusan"
                 android:layout_below="@+id/Jurusan"
-                android:text="Menulis" />
+                android:text="Membaca"
+                android:textSize="18dp" />
 
             <CheckBox
                 android:id="@+id/checkBoxLukis"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/Jurusan"
-                android:layout_toEndOf="@+id/checkBoxNulis"
-                android:layout_toRightOf="@+id/checkBoxNulis"
-                android:text="Melukis" />
+                android:layout_alignLeft="@+id/checkBoxBaca"
+                android:layout_alignStart="@+id/checkBoxBaca"
+                android:layout_below="@+id/checkBoxBaca"
+                android:text="Melukis"
+                android:textSize="18dp" />
 
             <CheckBox
                 android:id="@+id/checkBoxDesign"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/Jurusan"
-                android:layout_toEndOf="@+id/checkBoxLukis"
-                android:layout_toRightOf="@+id/checkBoxLukis"
-                android:text="Design" />
+                android:layout_alignLeft="@+id/checkBoxLukis"
+                android:layout_alignStart="@+id/checkBoxLukis"
+                android:layout_below="@+id/checkBoxLukis"
+                android:text="Design"
+                android:textSize="18dp" />
 
         </RelativeLayout>
 
@@ -168,8 +175,13 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_gravity="center_horizontal"
             android:text="Setuju" />
+
+        <TextView
+            android:id="@+id/tvHasil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Hasil" />
 
     </LinearLayout>
 </ScrollView>
