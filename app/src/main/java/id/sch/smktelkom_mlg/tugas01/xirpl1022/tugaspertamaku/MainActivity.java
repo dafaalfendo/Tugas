@@ -6,14 +6,12 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     EditText nama, email;
     TextView hasil;
-    RadioGroup kelas;
     Spinner jurusan;
     CheckBox membaca, melukis, design;
     RadioButton sepuluh, sebelas, duabelas;
@@ -27,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
         nama = (EditText) findViewById(R.id.Nama);
         email = (EditText) findViewById(R.id.Email);
         hasil = (TextView) findViewById(R.id.tvHasil);
-        kelas = (RadioGroup) findViewById(R.id.Kelas);
         jurusan = (Spinner) findViewById(R.id.Jurusan);
         membaca = (CheckBox) findViewById(R.id.checkBoxBaca);
         melukis = (CheckBox) findViewById(R.id.checkBoxLukis);
